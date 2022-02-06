@@ -9,31 +9,44 @@ import SwiftUI
 import UIKit
 
 struct CardView: View {
-    let screen = UIScreen.main.bounds
-    @State private var date = Date()
-    @State private var todaysnote: String = ""
     
+    var emojis = [""]
     var body: some View {
         ZStack {
             //background blur
-            GeometryReader { proxy in
-                ZStack{
-                    Color.white
-                    Text("🦞")
-                        .font(.system(size: 200.0))
-                        .frame(width: 300)
-                        .position(x: .random(in: 0...proxy.size.width/1.5),
-                                  y: .random(in: 0...proxy.size.height))
-                    
-                    .blur(radius: 50)
-                }
+            Color.white
+            ForEach(emojis, id:\.self) { emoji in
+                Text(emoji).modifier(EmojiModifier())
             }
         }
-        .frame(width: screen.width - 30, height: 200)
-        .mask(RoundedRectangle(cornerRadius: 15).opacity(0.9))
-        .shadow(color: Color.black.opacity(0.2), radius: 10)
+        .modifier(CardModifier())
     }
 }
+
+struct CardModifier : ViewModifier {
+    let screen = UIScreen.main.bounds
+    func body(content: Content) -> some View {
+        content
+            .frame(width: screen.width - 30, height: 200)
+            .mask(RoundedRectangle(cornerRadius: 15).opacity(0.9))
+            .shadow(color: Color.black.opacity(0.2), radius: 10)
+    }
+}
+
+struct EmojiModifier : ViewModifier {
+    func body(content: Content) -> some View {
+        GeometryReader { proxy in
+            content
+                .font(.system(size: 200.0))
+                .frame(width: 300)
+                .position(x: .random(in: 0...proxy.size.width/1.5),
+                          y: .random(in: 0...proxy.size.height))
+                .blur(radius: 50)
+        }
+    }
+}
+
+
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
