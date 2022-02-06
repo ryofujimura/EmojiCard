@@ -9,8 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            Color.yellow
+                .opacity(0.4)
+                .edgesIgnoringSafeArea(.all)
+            VStack{
+                DatePickerView()
+                CardView(card: Card.example)
+            }
+            
+        }
     }
 }
 
