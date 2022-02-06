@@ -10,6 +10,7 @@
 		FB1F912027AE283A00F2E07D /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1F911F27AE283A00F2E07D /* CloudKit.framework */; };
 		FB669AA227AE1B71006436AA /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB669AA127AE1B71006436AA /* PassKit.framework */; };
 		FB669AA427AE1B80006436AA /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB669AA327AE1B80006436AA /* HealthKit.framework */; };
+		FB6772A827AFBFFB009E0C7A /* ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6772A727AFBFFB009E0C7A /* ViewModifier.swift */; };
 		FBB1D54727ACDA930072CC2B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1D54627ACDA930072CC2B /* CardView.swift */; };
 		FBE411AA27ACD7A200CC9E0C /* DailyCheckinAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE411A927ACD7A200CC9E0C /* DailyCheckinAppApp.swift */; };
 		FBE411AC27ACD7A200CC9E0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE411AB27ACD7A200CC9E0C /* ContentView.swift */; };
@@ -22,6 +23,7 @@
 		FB669A9F27AE1B71006436AA /* DailyCheckinApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DailyCheckinApp.entitlements; sourceTree = "<group>"; };
 		FB669AA127AE1B71006436AA /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		FB669AA327AE1B80006436AA /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		FB6772A727AFBFFB009E0C7A /* ViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifier.swift; sourceTree = "<group>"; };
 		FBB1D54627ACDA930072CC2B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FBE411A627ACD7A200CC9E0C /* DailyCheckinApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyCheckinApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBE411A927ACD7A200CC9E0C /* DailyCheckinAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCheckinAppApp.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				FBE411A927ACD7A200CC9E0C /* DailyCheckinAppApp.swift */,
 				FBE411AB27ACD7A200CC9E0C /* ContentView.swift */,
 				FBB1D54627ACDA930072CC2B /* CardView.swift */,
+				FB6772A727AFBFFB009E0C7A /* ViewModifier.swift */,
 				FBE411AD27ACD7A300CC9E0C /* Assets.xcassets */,
 				FBE411AF27ACD7A300CC9E0C /* Preview Content */,
 			);
@@ -165,6 +168,7 @@
 				FBE411AC27ACD7A200CC9E0C /* ContentView.swift in Sources */,
 				FBB1D54727ACDA930072CC2B /* CardView.swift in Sources */,
 				FBE411AA27ACD7A200CC9E0C /* DailyCheckinAppApp.swift in Sources */,
+				FB6772A827AFBFFB009E0C7A /* ViewModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
