@@ -15,8 +15,6 @@ struct ContentView: View {
             VStack{
                 CardView()
                 Spacer()
-                CardView()
-                
             }
         }
     }

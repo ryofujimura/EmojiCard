@@ -28,19 +28,23 @@ extension String {
 }
 
 extension Color {
-    static let lightShadow = Color(red: 255 / 255, green: 255 / 255, blue: 255 / 255)
-    static let darkShadow = Color(red: 163 / 255, green: 177 / 255, blue: 198 / 255)
+    static let lightShadow = Color(red: 234 / 255, green: 239 / 255, blue: 246 / 255)
+    static let darkShadow = Color(red: 183 / 255, green: 197 / 255, blue: 218 / 255)
     static let background = Color(red: 224 / 255, green: 229 / 255, blue: 236 / 255)
     static let neumorphictextColor = Color(red: 132 / 255, green: 132 / 255, blue: 132 / 255)
 }
 
 struct TextFieldModifier : ViewModifier {
+    let screen = UIScreen.main.bounds
     func body(content: Content) -> some View {
         content
+            .multilineTextAlignment(.center)
+            .submitLabel(.send)
+            .frame(width: screen.width)
             .padding()
-            .foregroundColor(.neumorphictextColor)
-            .background(Color.background)
-            .cornerRadius(6)
+//            .foregroundColor(.neumorphictextColor.opacity(0.2))
+//            .background(Color.background.opacity(0.2))
+//            .cornerRadius(6)
             .shadow(color: Color.darkShadow, radius: 3, x: 2, y: 2)
             .shadow(color: Color.lightShadow, radius: 3, x: -2, y: -2)
     }
@@ -50,9 +54,21 @@ struct CardModifier : ViewModifier {
     let screen = UIScreen.main.bounds
     func body(content: Content) -> some View {
         content
-            .frame(width: screen.width - 30, height: 200)
+            .aspectRatio(5, contentMode: .fit)
+            .frame(width: screen.width - 50)
             .mask(RoundedRectangle(cornerRadius: 15).opacity(0.9))
-//            .shadow(color: Color.black.opacity(0.9), radius: 10)
+            .shadow(color: Color.darkShadow, radius: 3, x: 2, y: 2)
+            .shadow(color: Color.lightShadow, radius: 3, x: -2, y: -2)
+    }
+}
+
+struct EntireScreen : ViewModifier {
+    func body(content: Content) -> some View {
+        GeometryReader { proxy in
+            content
+                .opacity(0.0)
+                .frame(width: proxy.size.width, height: proxy.size.height)
+        }
     }
 }
 
@@ -61,7 +77,7 @@ struct EmojiModifier : ViewModifier {
         GeometryReader { proxy in
             content
                 .font(.system(size: 150.0))
-                .frame(width: 300)
+//                .frame(width: 300)
                 .position(x: .random(in: 0...proxy.size.width),
                           y: .random(in: 0...proxy.size.height))
                 .blur(radius: 50)
