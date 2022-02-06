@@ -14,10 +14,8 @@ struct ContentView: View {
                 .opacity(0.2)
                 .edgesIgnoringSafeArea(.all)
             VStack{
-//                DatePickerView()
                 CardView()
             }
-            
         }
     }
 }
