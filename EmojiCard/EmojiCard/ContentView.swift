@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  DailyCheckinApp
+//  EmojiCard
 //
-//  Created by ryo fuj on 2/3/22.
+//  Created by ryo fuj on 2/6/22.
 //
 
 import SwiftUI
@@ -14,9 +14,12 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack{
                 CardView()
+                Spacer()
+                CardView()
+                
             }
         }
-    }
+    }d
 }
 
 struct ContentView_Previews: PreviewProvider {
