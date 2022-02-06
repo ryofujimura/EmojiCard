@@ -19,7 +19,7 @@ struct ContentView: View {
                 
             }
         }
-    }d
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {

@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB3D531127B0850C00CFC08C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D531027B0850C00CFC08C /* CardView.swift */; };
+		FB3D531327B0853500CFC08C /* ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D531227B0853500CFC08C /* ViewModifier.swift */; };
 		FB69376927B06F3A00BAB73D /* EmojiCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB69376827B06F3A00BAB73D /* EmojiCardApp.swift */; };
 		FB69376B27B06F3A00BAB73D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB69376A27B06F3A00BAB73D /* ContentView.swift */; };
 		FB69376D27B06F3B00BAB73D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB69376C27B06F3B00BAB73D /* Assets.xcassets */; };
 		FB69377027B06F3B00BAB73D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB69376F27B06F3B00BAB73D /* Preview Assets.xcassets */; };
-		FB69377827B06F7000BAB73D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB69377627B06F7000BAB73D /* CardView.swift */; };
-		FB69377927B06F7000BAB73D /* ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB69377727B06F7000BAB73D /* ViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB3D531027B0850C00CFC08C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FB3D531227B0853500CFC08C /* ViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifier.swift; sourceTree = "<group>"; };
 		FB69376527B06F3A00BAB73D /* EmojiCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB69376827B06F3A00BAB73D /* EmojiCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCardApp.swift; sourceTree = "<group>"; };
 		FB69376A27B06F3A00BAB73D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB69376C27B06F3B00BAB73D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB69376F27B06F3B00BAB73D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FB69377627B06F7000BAB73D /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = ../../EmojiCard1/EmojiCard/CardView.swift; sourceTree = "<group>"; };
-		FB69377727B06F7000BAB73D /* ViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewModifier.swift; path = ../../EmojiCard1/EmojiCard/ViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +57,8 @@
 			children = (
 				FB69376827B06F3A00BAB73D /* EmojiCardApp.swift */,
 				FB69376A27B06F3A00BAB73D /* ContentView.swift */,
-				FB69377627B06F7000BAB73D /* CardView.swift */,
-				FB69377727B06F7000BAB73D /* ViewModifier.swift */,
+				FB3D531027B0850C00CFC08C /* CardView.swift */,
+				FB3D531227B0853500CFC08C /* ViewModifier.swift */,
 				FB69376C27B06F3B00BAB73D /* Assets.xcassets */,
 				FB69376E27B06F3B00BAB73D /* Preview Content */,
 			);
@@ -144,9 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB69376B27B06F3A00BAB73D /* ContentView.swift in Sources */,
-				FB69377827B06F7000BAB73D /* CardView.swift in Sources */,
+				FB3D531127B0850C00CFC08C /* CardView.swift in Sources */,
 				FB69376927B06F3A00BAB73D /* EmojiCardApp.swift in Sources */,
-				FB69377927B06F7000BAB73D /* ViewModifier.swift in Sources */,
+				FB3D531327B0853500CFC08C /* ViewModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
