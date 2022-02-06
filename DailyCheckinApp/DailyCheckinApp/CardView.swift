@@ -14,16 +14,15 @@ struct CardView: View {
     
     var body: some View {
         VStack {
+            TextField("Enter Emoji", text: $newWord)
+                .modifier(TextFieldModifier())
+                .padding()
             ZStack {
-                //background blur
-                Color.white
                 ForEach(usedWords, id:\.self) { emoji in
                     if emoji.containsOnlyEmoji {
                         Text(emoji).modifier(EmojiModifier())
                     }
                 }
-                TextField("Enter Emoji", text: $newWord)
-                    .padding()
             }
             .modifier(CardModifier())
         }
