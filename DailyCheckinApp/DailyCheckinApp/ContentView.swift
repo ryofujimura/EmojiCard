@@ -11,11 +11,11 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Color.yellow
-                .opacity(0.4)
+                .opacity(0.2)
                 .edgesIgnoringSafeArea(.all)
             VStack{
-                DatePickerView()
-                CardView(card: Card.example)
+//                DatePickerView()
+                CardView()
             }
             
         }
