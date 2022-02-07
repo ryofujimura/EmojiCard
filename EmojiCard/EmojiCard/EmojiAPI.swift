@@ -24,24 +24,6 @@ class EmojiAPI : ObservableObject {
     }
 }
 
-//class EmojiAPI : ObservableObject {
-//    @Published var emojidatas: [EmojiData] = []
-//    func fetch() {
-//        guard let url = URL(string: "\(String(describing: Bundle.main.path(forResource: "apipractice", ofType: "json")))") else { return }
-//
-//        let task = URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
-//            guard let data = data, error == nil else { return }
-//            do {
-//                let emojidatas = try JSONDecoder().decode([EmojiData].self, from: data)
-//                DispatchQueue.main.async {
-//                    self?.emojidatas = emojidatas
-//                }
-//            } catch { return }
-//        }
-//        task.resume()
-//    }
-//}
-
 struct EmojiData: Hashable, Codable {
     let slug : String
     let character : String

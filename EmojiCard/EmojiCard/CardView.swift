@@ -33,9 +33,7 @@ struct CardView: View {
                 Rectangle()
                     .modifier(EntireScreen())
             }
-            TextField("Enter Today's Emoji", text: $newWord)
-                .modifier(TextFieldModifier())
-                .focused($textField)
+            TextFieldDynamicWidth(title: "Enter Emoji", text: $newWord)
                 .onSubmit { addNewWord() }
         }
     }

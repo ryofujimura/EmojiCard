@@ -15,7 +15,6 @@ struct EmojiView: View {
             List{
                 ForEach(emojiAPI.emojidatas, id: \.self) { emojidata in
                     HStack{
-//                        Image("")
                         Text(emojidata.slug)
                         Text(emojidata.character)
                         Text(emojidata.unicodeName)

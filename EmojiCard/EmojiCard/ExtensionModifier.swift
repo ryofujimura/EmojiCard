@@ -34,17 +34,48 @@ extension Color {
     static let neumorphictextColor = Color(red: 132 / 255, green: 132 / 255, blue: 132 / 255)
 }
 
+struct TextFieldDynamicWidth: View {
+    let title: String
+    @Binding var text: String
+    @State private var textRect = CGRect()
+    
+    var body: some View {
+        ZStack {
+            Text(text == "" ? title : text).background(GlobalGeometryGetter(rect: $textRect)).layoutPriority(1).opacity(0)
+            HStack {
+                TextField(title, text: $text)
+                    .frame(width: textRect.width)
+                    .modifier(TextFieldModifier())
+            }
+        }
+    }
+}
+
+struct GlobalGeometryGetter: View {
+    @Binding var rect: CGRect
+    var body: some View {
+        return GeometryReader { geometry in
+            self.makeView(geometry: geometry)
+        }
+    }
+
+    func makeView(geometry: GeometryProxy) -> some View {
+        DispatchQueue.main.async {
+            self.rect = geometry.frame(in: .global)
+        }
+
+        return Rectangle().fill(Color.clear)
+    }
+}
+
 struct TextFieldModifier : ViewModifier {
     let screen = UIScreen.main.bounds
     func body(content: Content) -> some View {
         content
+            .font(.subheadline)
             .multilineTextAlignment(.center)
             .submitLabel(.send)
-            .frame(width: screen.width-200)
             .padding()
-//            .foregroundColor(.neumorphictextColor.opacity(0.2))
-//            .background(Color.background.opacity(0.2))
-//            .cornerRadius(6)
             .shadow(color: Color.darkShadow, radius: 3, x: 2, y: 2)
             .shadow(color: Color.lightShadow, radius: 3, x: -2, y: -2)
     }
@@ -54,7 +85,7 @@ struct CardModifier : ViewModifier {
     let screen = UIScreen.main.bounds
     func body(content: Content) -> some View {
         content
-            .aspectRatio(1.8, contentMode: .fit)
+            .aspectRatio(2, contentMode: .fit)
             .frame(width: screen.width - 50)
             .mask(RoundedRectangle(cornerRadius: 15).opacity(0.9))
             .shadow(color: Color.darkShadow, radius: 3, x: 2, y: 2)

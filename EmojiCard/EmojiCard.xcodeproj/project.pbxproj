@@ -11,7 +11,6 @@
 		FB3D531327B0853500CFC08C /* ExtensionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D531227B0853500CFC08C /* ExtensionModifier.swift */; };
 		FB3D531927B0947700CFC08C /* EmojiAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D531827B0947700CFC08C /* EmojiAPI.swift */; };
 		FB3D531B27B0EF1100CFC08C /* emojis.json in Resources */ = {isa = PBXBuildFile; fileRef = FB3D531A27B0EF1100CFC08C /* emojis.json */; };
-		FB3D531F27B0F23F00CFC08C /* apipractice.json in Resources */ = {isa = PBXBuildFile; fileRef = FB3D531E27B0F23F00CFC08C /* apipractice.json */; };
 		FB3D532027B0F61200CFC08C /* ContentView.swift in Resources */ = {isa = PBXBuildFile; fileRef = FB69376A27B06F3A00BAB73D /* ContentView.swift */; };
 		FB3D532227B0F9F100CFC08C /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D532127B0F9F100CFC08C /* EmojiView.swift */; };
 		FB69376927B06F3A00BAB73D /* EmojiCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB69376827B06F3A00BAB73D /* EmojiCardApp.swift */; };
@@ -25,7 +24,6 @@
 		FB3D531227B0853500CFC08C /* ExtensionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionModifier.swift; sourceTree = "<group>"; };
 		FB3D531827B0947700CFC08C /* EmojiAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiAPI.swift; sourceTree = "<group>"; };
 		FB3D531A27B0EF1100CFC08C /* emojis.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = emojis.json; path = ../../../../../Downloads/emojis.json; sourceTree = "<group>"; };
-		FB3D531E27B0F23F00CFC08C /* apipractice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = apipractice.json; path = ../../../../../Downloads/apipractice.json; sourceTree = "<group>"; };
 		FB3D532127B0F9F100CFC08C /* EmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
 		FB69376527B06F3A00BAB73D /* EmojiCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB69376827B06F3A00BAB73D /* EmojiCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCardApp.swift; sourceTree = "<group>"; };
@@ -71,7 +69,6 @@
 				FB3D531827B0947700CFC08C /* EmojiAPI.swift */,
 				FB3D532127B0F9F100CFC08C /* EmojiView.swift */,
 				FB3D531A27B0EF1100CFC08C /* emojis.json */,
-				FB3D531E27B0F23F00CFC08C /* apipractice.json */,
 				FB69376C27B06F3B00BAB73D /* Assets.xcassets */,
 				FB69376E27B06F3B00BAB73D /* Preview Content */,
 			);
@@ -147,7 +144,6 @@
 				FB3D532027B0F61200CFC08C /* ContentView.swift in Resources */,
 				FB3D531B27B0EF1100CFC08C /* emojis.json in Resources */,
 				FB69377027B06F3B00BAB73D /* Preview Assets.xcassets in Resources */,
-				FB3D531F27B0F23F00CFC08C /* apipractice.json in Resources */,
 				FB69376D27B06F3B00BAB73D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
