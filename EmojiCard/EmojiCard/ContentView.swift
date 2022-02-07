@@ -18,7 +18,7 @@ struct ContentView: View {
 //                Rectangle()
 //                    .modifier(EntireScreen())
 //            }
-            Emoji()
+            EmojiView()
         }
     }
 }

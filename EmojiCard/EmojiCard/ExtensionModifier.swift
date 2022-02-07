@@ -85,12 +85,3 @@ struct EmojiModifier : ViewModifier {
     }
 }
 
-struct EmojiData: Codable {
-//    var _id : String
-    let slug : String
-    let character : String
-    let unicodeName : String
-    let codePoint : String
-    let group : String
-    let subGroup : String
-}
