@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FB3D531127B0850C00CFC08C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D531027B0850C00CFC08C /* CardView.swift */; };
-		FB3D531327B0853500CFC08C /* ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D531227B0853500CFC08C /* ViewModifier.swift */; };
+		FB3D531327B0853500CFC08C /* ExtensionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D531227B0853500CFC08C /* ExtensionModifier.swift */; };
+		FB3D531927B0947700CFC08C /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D531827B0947700CFC08C /* Emoji.swift */; };
 		FB69376927B06F3A00BAB73D /* EmojiCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB69376827B06F3A00BAB73D /* EmojiCardApp.swift */; };
 		FB69376B27B06F3A00BAB73D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB69376A27B06F3A00BAB73D /* ContentView.swift */; };
 		FB69376D27B06F3B00BAB73D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB69376C27B06F3B00BAB73D /* Assets.xcassets */; };
@@ -17,7 +18,8 @@
 
 /* Begin PBXFileReference section */
 		FB3D531027B0850C00CFC08C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		FB3D531227B0853500CFC08C /* ViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifier.swift; sourceTree = "<group>"; };
+		FB3D531227B0853500CFC08C /* ExtensionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionModifier.swift; sourceTree = "<group>"; };
+		FB3D531827B0947700CFC08C /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		FB69376527B06F3A00BAB73D /* EmojiCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB69376827B06F3A00BAB73D /* EmojiCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCardApp.swift; sourceTree = "<group>"; };
 		FB69376A27B06F3A00BAB73D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,7 +60,8 @@
 				FB69376827B06F3A00BAB73D /* EmojiCardApp.swift */,
 				FB69376A27B06F3A00BAB73D /* ContentView.swift */,
 				FB3D531027B0850C00CFC08C /* CardView.swift */,
-				FB3D531227B0853500CFC08C /* ViewModifier.swift */,
+				FB3D531227B0853500CFC08C /* ExtensionModifier.swift */,
+				FB3D531827B0947700CFC08C /* Emoji.swift */,
 				FB69376C27B06F3B00BAB73D /* Assets.xcassets */,
 				FB69376E27B06F3B00BAB73D /* Preview Content */,
 			);
@@ -143,10 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB3D531927B0947700CFC08C /* Emoji.swift in Sources */,
 				FB69376B27B06F3A00BAB73D /* ContentView.swift in Sources */,
 				FB3D531127B0850C00CFC08C /* CardView.swift in Sources */,
 				FB69376927B06F3A00BAB73D /* EmojiCardApp.swift in Sources */,
-				FB3D531327B0853500CFC08C /* ViewModifier.swift in Sources */,
+				FB3D531327B0853500CFC08C /* ExtensionModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

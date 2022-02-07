@@ -20,21 +20,18 @@ struct CardView: View {
                 ForEach(usedWords, id:\.self) { emoji in
                     if emoji.containsOnlyEmoji {
                         Text(emoji)
-                            .transition(.scale)
+                            .animation(Animation.easeInOut)
                             .modifier(EmojiModifier())
                     }
                 }
             }
             .modifier(CardModifier())
-            
-            
             Button(action: {
                 textField = false
                 addNewWord()
             }) {
                 Rectangle()
                     .modifier(EntireScreen())
-
             }
             TextField("Enter Today's Emoji", text: $newWord)
                 .modifier(TextFieldModifier())

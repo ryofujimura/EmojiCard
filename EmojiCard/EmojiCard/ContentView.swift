@@ -12,10 +12,13 @@ struct ContentView: View {
         ZStack {
             Color.background
                 .edgesIgnoringSafeArea(.all)
-            VStack{
-                CardView()
-                Spacer()
-            }
+//            VStack{
+//                CardView()
+//                Spacer()
+//                Rectangle()
+//                    .modifier(EntireScreen())
+//            }
+            Emoji()
         }
     }
 }

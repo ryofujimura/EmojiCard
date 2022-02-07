@@ -40,7 +40,7 @@ struct TextFieldModifier : ViewModifier {
         content
             .multilineTextAlignment(.center)
             .submitLabel(.send)
-            .frame(width: screen.width)
+            .frame(width: screen.width-200)
             .padding()
 //            .foregroundColor(.neumorphictextColor.opacity(0.2))
 //            .background(Color.background.opacity(0.2))
@@ -54,7 +54,7 @@ struct CardModifier : ViewModifier {
     let screen = UIScreen.main.bounds
     func body(content: Content) -> some View {
         content
-            .aspectRatio(5, contentMode: .fit)
+            .aspectRatio(1.8, contentMode: .fit)
             .frame(width: screen.width - 50)
             .mask(RoundedRectangle(cornerRadius: 15).opacity(0.9))
             .shadow(color: Color.darkShadow, radius: 3, x: 2, y: 2)
@@ -83,4 +83,14 @@ struct EmojiModifier : ViewModifier {
                 .blur(radius: 50)
         }
     }
+}
+
+struct EmojiData: Codable {
+//    var _id : String
+    let slug : String
+    let character : String
+    let unicodeName : String
+    let codePoint : String
+    let group : String
+    let subGroup : String
 }
