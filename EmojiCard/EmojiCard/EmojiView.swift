@@ -15,16 +15,17 @@ struct EmojiView: View {
             List{
                 ForEach(emojiAPI.emojidatas, id: \.self) { emojidata in
                     HStack{
-                        Text(emojidata.slug)
+//                        Text(emojidata.slug)
                         Text(emojidata.character)
-                        Text(emojidata.unicodeName)
-                        Text(emojidata.codePoint)
-                        Text(emojidata.group)
-                        Text(emojidata.subGroup)
+//                        Text(emojidata.unicodeName)
+//                        Text(emojidata.codePoint)
+//                        Text(emojidata.group)
+//                        Text(emojidata.subGroup)
                     }
                     .padding(3)
                 }
             }
+            .background(Color.clear)
             .navigationTitle("Emojis")
             .onAppear{ emojiAPI.fetch() }
         }

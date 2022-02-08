@@ -9,18 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            Color.background
-                .edgesIgnoringSafeArea(.all)
-            VStack{
-                CardView()
-                    .frame(height: 160)
-                Spacer()
-                Rectangle()
-                    .modifier(EntireScreen())
-            }
-//            EmojiView()
-        }
+//        CardView()
+//        EmojiView()
+        LiquidSwipeView()
     }
 }
 

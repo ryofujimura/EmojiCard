@@ -11,10 +11,34 @@ struct CardView: View {
     
     @State private var usedWords = [String]()
     @State private var newWord = ""
-    @FocusState private var textField: Bool
+    @State private var textField = true
     
     var body: some View {
-        ZStack {
+        VStack {
+            ZStack {
+                ZStack {
+                    Color.background
+                    ForEach(usedWords, id:\.self) { emoji in
+                        if emoji.containsOnlyEmoji {
+                            Text(emoji)
+                                .animation(Animation.easeInOut)
+                                .modifier(EmojiModifier())
+                        }
+                    }
+                }
+                .modifier(CardModifier())
+                Button(action: {
+                    textField = false
+                    addNewWord()
+                }) {
+                    Rectangle()
+                        .modifier(EntireScreen())
+                }
+                TextFieldDynamicWidth(title: "Enter Emoji", text: $newWord)
+                    .onSubmit { addNewWord() }
+            }
+            .aspectRatio(2.5, contentMode: .fit)
+            
             ZStack {
                 Color.background
                 ForEach(usedWords, id:\.self) { emoji in
@@ -26,15 +50,7 @@ struct CardView: View {
                 }
             }
             .modifier(CardModifier())
-            Button(action: {
-                textField = false
-                addNewWord()
-            }) {
-                Rectangle()
-                    .modifier(EntireScreen())
-            }
-            TextFieldDynamicWidth(title: "Enter Emoji", text: $newWord)
-                .onSubmit { addNewWord() }
+            .aspectRatio(5, contentMode: .fit)
         }
     }
     

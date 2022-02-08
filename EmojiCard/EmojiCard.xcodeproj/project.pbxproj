@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB1F26CE27B1C6B2001D2FCF /* LiquidSwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F26CD27B1C6B2001D2FCF /* LiquidSwipeView.swift */; };
 		FB3D531127B0850C00CFC08C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D531027B0850C00CFC08C /* CardView.swift */; };
-		FB3D531327B0853500CFC08C /* ExtensionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D531227B0853500CFC08C /* ExtensionModifier.swift */; };
+		FB3D531327B0853500CFC08C /* ModData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D531227B0853500CFC08C /* ModData.swift */; };
 		FB3D531927B0947700CFC08C /* EmojiAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D531827B0947700CFC08C /* EmojiAPI.swift */; };
-		FB3D531B27B0EF1100CFC08C /* emojis.json in Resources */ = {isa = PBXBuildFile; fileRef = FB3D531A27B0EF1100CFC08C /* emojis.json */; };
 		FB3D532027B0F61200CFC08C /* ContentView.swift in Resources */ = {isa = PBXBuildFile; fileRef = FB69376A27B06F3A00BAB73D /* ContentView.swift */; };
 		FB3D532227B0F9F100CFC08C /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D532127B0F9F100CFC08C /* EmojiView.swift */; };
 		FB69376927B06F3A00BAB73D /* EmojiCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB69376827B06F3A00BAB73D /* EmojiCardApp.swift */; };
@@ -20,10 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB1F26CD27B1C6B2001D2FCF /* LiquidSwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidSwipeView.swift; sourceTree = "<group>"; };
 		FB3D531027B0850C00CFC08C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		FB3D531227B0853500CFC08C /* ExtensionModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionModifier.swift; sourceTree = "<group>"; };
+		FB3D531227B0853500CFC08C /* ModData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModData.swift; sourceTree = "<group>"; };
 		FB3D531827B0947700CFC08C /* EmojiAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiAPI.swift; sourceTree = "<group>"; };
-		FB3D531A27B0EF1100CFC08C /* emojis.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = emojis.json; path = ../../../../../Downloads/emojis.json; sourceTree = "<group>"; };
 		FB3D532127B0F9F100CFC08C /* EmojiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
 		FB69376527B06F3A00BAB73D /* EmojiCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB69376827B06F3A00BAB73D /* EmojiCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCardApp.swift; sourceTree = "<group>"; };
@@ -43,6 +43,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB1F26D127B1E60D001D2FCF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB1F26D227B1E625001D2FCF /* data */ = {
+			isa = PBXGroup;
+			children = (
+				FB3D531227B0853500CFC08C /* ModData.swift */,
+				FB3D531827B0947700CFC08C /* EmojiAPI.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
 		FB69375C27B06F3A00BAB73D = {
 			isa = PBXGroup;
 			children = (
@@ -63,12 +79,12 @@
 			isa = PBXGroup;
 			children = (
 				FB69376827B06F3A00BAB73D /* EmojiCardApp.swift */,
+				FB1F26D127B1E60D001D2FCF /* View */,
 				FB69376A27B06F3A00BAB73D /* ContentView.swift */,
+				FB1F26CD27B1C6B2001D2FCF /* LiquidSwipeView.swift */,
 				FB3D531027B0850C00CFC08C /* CardView.swift */,
-				FB3D531227B0853500CFC08C /* ExtensionModifier.swift */,
-				FB3D531827B0947700CFC08C /* EmojiAPI.swift */,
 				FB3D532127B0F9F100CFC08C /* EmojiView.swift */,
-				FB3D531A27B0EF1100CFC08C /* emojis.json */,
+				FB1F26D227B1E625001D2FCF /* data */,
 				FB69376C27B06F3B00BAB73D /* Assets.xcassets */,
 				FB69376E27B06F3B00BAB73D /* Preview Content */,
 			);
@@ -142,7 +158,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB3D532027B0F61200CFC08C /* ContentView.swift in Resources */,
-				FB3D531B27B0EF1100CFC08C /* emojis.json in Resources */,
 				FB69377027B06F3B00BAB73D /* Preview Assets.xcassets in Resources */,
 				FB69376D27B06F3B00BAB73D /* Assets.xcassets in Resources */,
 			);
@@ -158,8 +173,9 @@
 				FB3D531927B0947700CFC08C /* EmojiAPI.swift in Sources */,
 				FB69376B27B06F3A00BAB73D /* ContentView.swift in Sources */,
 				FB3D531127B0850C00CFC08C /* CardView.swift in Sources */,
+				FB1F26CE27B1C6B2001D2FCF /* LiquidSwipeView.swift in Sources */,
 				FB69376927B06F3A00BAB73D /* EmojiCardApp.swift in Sources */,
-				FB3D531327B0853500CFC08C /* ExtensionModifier.swift in Sources */,
+				FB3D531327B0853500CFC08C /* ModData.swift in Sources */,
 				FB3D532227B0F9F100CFC08C /* EmojiView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
