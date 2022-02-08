@@ -18,12 +18,8 @@ struct LiquidSwipeView: View {
     @State private var appearOpacity = 0.0
     
     var body: some View {
-        ZStack {
-            content()
-            slider(data: $leftData)
-            slider(data: $rightData)
-        }
-        .edgesIgnoringSafeArea(.all)
+        content()
+            .edgesIgnoringSafeArea(.all)
     }
     
     
@@ -31,50 +27,23 @@ struct LiquidSwipeView: View {
         return  ZStack {
             Rectangle().foregroundColor(Config.colors[pageIndex])
             if pageIndex == 0 {
-                VStack{
+                ZStack{
                     Text("Currently page: \(pageIndex+1)").font(.largeTitle).foregroundColor(Color.white)
                     CardView()
+                    slider(data: $rightData)
                 }
-                .transition(AnyTransition.offset(x: screenWidth(right: swipeRight()), y: 0))
-//            } else if pageIndex == 1 {
-//                VStack{
-//                    Text("From page:\(previousPageIndex+1)\nCurrently page: \(pageIndex+1)").font(.largeTitle).foregroundColor(Color.white)
-//                    CardView()
-//                }
-//                .transition(AnyTransition.offset(x: screenWidth(right: swipeRight()), y: 0))
-//            } else if pageIndex == 2 {
-//                VStack{
-//                    Text("From page:\(previousPageIndex+1)\nCurrently page: \(pageIndex+1)").font(.largeTitle).foregroundColor(Color.white)
-//                    CardView()
-//                }
-//                .transition(AnyTransition.offset(x: screenWidth(right: swipeRight()), y: 0))
-            } else { Text("error") }
+            } else {
+                ZStack{
+                    Text("Currently page: \(pageIndex+1)").font(.largeTitle).foregroundColor(Color.white)
+                    EmojiView()
+                    slider(data: $leftData)
+                }
+            }
         }
         
         
     }
-    
-    func swipeRight() -> Bool{
-        var ppreviousPageIndex
-        ppreviousPageIndex = 4
-        print(ppreviousPageIndex)
-        print(pageIndex)
-        if pageIndex == 0{
-            if ppreviousPageIndex == 2 {
-                return true
-            } else { return false }
-        } else if pageIndex == 1{
-            if ppreviousPageIndex == 0 {
-                return false
-            } else { return true }
-        } else if pageIndex == 2{
-            if ppreviousPageIndex == 1 {
-                return false
-            } else { return true }
-        }
-        else { return false }
-    }
-    
+      
     private func index(of data: SliderData) -> Int {
         let last = Config.colors.count - 1
         if data.side == .left {

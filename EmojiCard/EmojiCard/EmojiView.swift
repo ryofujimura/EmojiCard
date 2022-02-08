@@ -8,9 +8,24 @@
 import SwiftUI
 
 struct EmojiView: View {
-    @StateObject var emojiAPI = EmojiAPI()
-    
+//    let emojiAPI = EmojiAPI()
+    @ObservedObject var emojiAPI = EmojiAPI()
+//    var emojicharacter : EmojiData { emojiAPI.emojidatas.randomElement()!}
     var body: some View {
+//        List(emojiAPI.emojidatas) {emojidata in
+//            HStack{
+//                Text(emojidata.character)
+//            }
+//        }
+//        .onAppear{ emojiAPI.fetch() }
+
+//        VStack {
+//            Text(emojicharacter.unicodeName)
+//            VStack {
+//                Text("HELLO")
+//            }
+//            .onAppear{ emojiAPI.fetch() }
+//        }
         NavigationView{
             List{
                 ForEach(emojiAPI.emojidatas, id: \.self) { emojidata in
@@ -24,6 +39,7 @@ struct EmojiView: View {
                     }
                     .padding(3)
                 }
+
             }
             .background(Color.clear)
             .navigationTitle("Emojis")

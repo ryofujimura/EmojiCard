@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FB1F26CE27B1C6B2001D2FCF /* LiquidSwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F26CD27B1C6B2001D2FCF /* LiquidSwipeView.swift */; };
+		FB1F26D527B26A00001D2FCF /* apipractice.json in Resources */ = {isa = PBXBuildFile; fileRef = FB1F26D427B26A00001D2FCF /* apipractice.json */; };
 		FB3D531127B0850C00CFC08C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D531027B0850C00CFC08C /* CardView.swift */; };
 		FB3D531327B0853500CFC08C /* ModData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D531227B0853500CFC08C /* ModData.swift */; };
 		FB3D531927B0947700CFC08C /* EmojiAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D531827B0947700CFC08C /* EmojiAPI.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		FB1F26CD27B1C6B2001D2FCF /* LiquidSwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidSwipeView.swift; sourceTree = "<group>"; };
+		FB1F26D427B26A00001D2FCF /* apipractice.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apipractice.json; sourceTree = "<group>"; };
 		FB3D531027B0850C00CFC08C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FB3D531227B0853500CFC08C /* ModData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModData.swift; sourceTree = "<group>"; };
 		FB3D531827B0947700CFC08C /* EmojiAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiAPI.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				FB3D531227B0853500CFC08C /* ModData.swift */,
 				FB3D531827B0947700CFC08C /* EmojiAPI.swift */,
+				FB1F26D427B26A00001D2FCF /* apipractice.json */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB3D532027B0F61200CFC08C /* ContentView.swift in Resources */,
+				FB1F26D527B26A00001D2FCF /* apipractice.json in Resources */,
 				FB69377027B06F3B00BAB73D /* Preview Assets.xcassets in Resources */,
 				FB69376D27B06F3B00BAB73D /* Assets.xcassets in Resources */,
 			);

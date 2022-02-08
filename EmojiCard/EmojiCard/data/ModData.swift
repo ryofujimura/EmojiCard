@@ -143,8 +143,8 @@ struct Config {
     static let waveMinHR = 16.0
     static let waveMinVR = 35.0
 
-    static let colors : [Color] = [Color(red: 62 / 255, green: 77 / 255, blue: 92 / 255),Color(red: 88 / 255, green: 92 / 255, blue: 62 / 255),Color(red: 92 / 255, green: 62 / 255, blue: 81 / 255)]
-    static let pageView : [Any] = [EmojiView(), CardView(), CardView()]
+    static let colors : [Color] = [Color(red: 62 / 255, green: 77 / 255, blue: 92 / 255), Color(red: 92 / 255, green: 62 / 255, blue: 81 / 255)]
+    static let pageView : [Any] = [EmojiView(), CardView()]
             
 }
 
