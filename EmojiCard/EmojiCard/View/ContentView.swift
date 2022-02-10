@@ -12,6 +12,7 @@ struct ContentView: View {
 //        CardView()
 //        EmojiView()
         LiquidSwipeView()
+//        EmojiBackground()
     }
 }
 

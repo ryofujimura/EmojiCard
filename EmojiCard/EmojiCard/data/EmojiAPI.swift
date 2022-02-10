@@ -25,6 +25,14 @@ class EmojiAPI : ObservableObject {
     }
 }
 
+//class EachEmojis : ObservableObject {
+//    let emojiCharacter: [Any] = EmojiData()
+//    init () {
+//        self.emojiCharacter = EmojiData(slug: slug, character: Character, unicodeName: <#T##String#>, codePoint: <#T##String#>, group: <#T##String#>, subGroup: <#T##String#>)
+////        emojiAPI.emojidatas.shuffled().prefix(30)
+//    }
+//}
+
 struct EmojiData: Hashable, Codable, Identifiable {
     enum CodingKeys: CodingKey {
         case slug

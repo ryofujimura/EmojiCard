@@ -28,14 +28,13 @@ struct LiquidSwipeView: View {
             Rectangle().foregroundColor(Config.colors[pageIndex])
             if pageIndex == 0 {
                 ZStack{
-                    Text("Currently page: \(pageIndex+1)").font(.largeTitle).foregroundColor(Color.white)
-                    CardView()
+                    EmojiBackground()
                     slider(data: $rightData)
                 }
             } else {
                 ZStack{
                     Text("Currently page: \(pageIndex+1)").font(.largeTitle).foregroundColor(Color.white)
-                    EmojiView()
+//                    EmojiView()
                     slider(data: $leftData)
                 }
             }

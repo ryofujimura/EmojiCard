@@ -44,7 +44,7 @@ struct TextFieldDynamicWidth: View {
             Text(text == "" ? title : text).background(GlobalGeometryGetter(rect: $textRect)).layoutPriority(1).opacity(0)
             HStack {
                 TextField(title, text: $text)
-                    .frame(width: textRect.width)
+                    .frame(width: textRect.maxX, height: textRect.maxY)
                     .modifier(TextFieldModifier())
             }
         }
@@ -71,7 +71,7 @@ struct GlobalGeometryGetter: View {
 struct TextFieldModifier : ViewModifier {
     func body(content: Content) -> some View {
         content
-            .font(.subheadline)
+            .font(.system(size: 100))
             .multilineTextAlignment(.center)
             .submitLabel(.send)
             .padding()
@@ -85,7 +85,7 @@ struct CardModifier : ViewModifier {
     func body(content: Content) -> some View {
         content
 //            .aspectRatio(2, contentMode: .fit)
-            .frame(width: screen.width - 100)
+            .frame(width: screen.width*0.7)
             .mask(RoundedRectangle(cornerRadius: 15).opacity(0.9))
             .shadow(color: Color.darkShadow, radius: 3, x: 2, y: 2)
             .shadow(color: Color.lightShadow, radius: 3, x: -2, y: -2)

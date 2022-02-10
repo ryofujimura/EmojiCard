@@ -37,7 +37,7 @@ struct CardView: View {
                 TextFieldDynamicWidth(title: "Enter Emoji", text: $newWord)
                     .onSubmit { addNewWord() }
             }
-            .aspectRatio(2.5, contentMode: .fit)
+            .aspectRatio(4, contentMode: .fit)
             
             ZStack {
                 Color.background
