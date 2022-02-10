@@ -50,7 +50,6 @@
 		FB1F26D127B1E60D001D2FCF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FB69376A27B06F3A00BAB73D /* ContentView.swift */,
 				FB1F26CD27B1C6B2001D2FCF /* LiquidSwipeView.swift */,
 				FB3D531027B0850C00CFC08C /* CardView.swift */,
 				FB3D532127B0F9F100CFC08C /* EmojiView.swift */,
@@ -89,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				FB69376827B06F3A00BAB73D /* EmojiCardApp.swift */,
+				FB69376A27B06F3A00BAB73D /* ContentView.swift */,
 				FB1F26D127B1E60D001D2FCF /* View */,
 				FB1F26D227B1E625001D2FCF /* data */,
 				FB69376C27B06F3B00BAB73D /* Assets.xcassets */,
