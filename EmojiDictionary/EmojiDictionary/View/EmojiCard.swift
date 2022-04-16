@@ -42,7 +42,7 @@ struct EmojiCard_Previews: PreviewProvider {
 extension EmojiCard {
     private var cardView: some View {
         RoundedRectangle(cornerRadius: 20)
-            .foregroundColor(Color.emojiCardView)
+            .foregroundColor(Color("emojiCardView"))
     }
 
     private var emojiCharacter: some View {
@@ -58,14 +58,16 @@ extension EmojiCard {
     private var emojiDescription : some View {
         ZStack{
             Text(emoji.codePoint)
-                .font(.system(size: 50))
+                .font(.system(size: 60))
                 .fontWeight(.bold)
-                .foregroundColor(Color.codePointText)
+                .foregroundColor(Color("codePointText"))
+                .frame(height: 50)
+                .blur(radius: 2)
                 .offset(x: 60, y: -40)
             Text(emoji.unicodeName.capitalized)
                 .font(.system(size: 50))
                 .fontWeight(.bold)
-                .foregroundColor(Color.titleText)
+                .foregroundColor(Color("titleText"))
         }
     }
     
@@ -73,24 +75,24 @@ extension EmojiCard {
         HStack(spacing: 0){
             Spacer()
             Button{} label: {
-                RoundedRectangle(cornerRadius: 10)
-                    .foregroundColor(Color.cardOnMenuView)
+                RoundedRectangle(cornerRadius: 20)
+                    .foregroundColor(Color("cardOnMenuView"))
                     .overlay(
                         Text(emoji.group.capitalized)
                             .font(.system(size: 20))
                             .fontWeight(.medium)
-                            .foregroundColor(Color.titleText)
+                            .foregroundColor(Color("titleText"))
                         )
             }
             Spacer()
             Button{} label: {
-                RoundedRectangle(cornerRadius: 10)
-                    .foregroundColor(Color.cardOnMenuView)
+                RoundedRectangle(cornerRadius: 20)
+                    .foregroundColor(Color("cardOnMenuView"))
                     .overlay(
                         Text(emoji.subGroup.capitalized)
                             .font(.system(size: 20))
                             .fontWeight(.medium)
-                            .foregroundColor(Color.titleText)
+                            .foregroundColor(Color("titleText"))
                         )
             }
             Spacer()

@@ -9,20 +9,15 @@ import SwiftUI
 
 @main
 struct EmojiDictionaryApp: App {
-    
-    /*
      @StateObject private var vm = HomeViewModel()
      
      var body: some Scene {
          WindowGroup {
              NavigationView{
-                 HomeView(emoji: dev.emoji)
+                 HomeView()
                      .navigationBarHidden(true)
              }
-     */
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+             .environmentObject(vm)
+         }
     }
 }
