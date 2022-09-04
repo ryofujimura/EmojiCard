@@ -44,7 +44,10 @@ struct HomeView_Previews: PreviewProvider {
 
 extension HomeView{
     private var emojiCard : some View {
-        EmojiCard(emoji: DeveloperPreview.instace.emoji, showEmojiCard: false)
+        EmojiCard(
+            emoji: DeveloperPreview.instace.emoji,
+            showEmojiCard: false
+        )
             .listRowInsets(.init())
     }
     

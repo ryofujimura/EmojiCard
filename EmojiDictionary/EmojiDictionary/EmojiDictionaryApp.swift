@@ -14,7 +14,7 @@ struct EmojiDictionaryApp: App {
      var body: some Scene {
          WindowGroup {
              NavigationView{
-                 HomeView()
+                 no()
                      .navigationBarHidden(true)
              }
              .environmentObject(vm)
