@@ -1,3 +1,10 @@
 
 EmojiCard/EmojiCard.xcodeproj/project.pbxproj
 *.xcuserstate
+EmojiCard/EmojiCard/.DS_Store
+EmojiCard/.DS_Store
+EmojiCard/EmojiCard/Assets.xcassets/.DS_Store
+EmojiDictionary/.DS_Store
+EmojiDictionary/EmojiDictionary/.DS_Store
+*.plist
+.DS_Store
